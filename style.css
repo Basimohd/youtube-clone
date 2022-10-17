@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+img{
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #202120; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #202121;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-right img{
+    width: 25px;
+    margin-right: 25px;
+}
+.nav-right .user-icon{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 0%;
+}
+.nav-left .menu-icon{
+    width: 22px;
+    margin-right: 25px;
+}
+.nav-left .logo{
+    width: 90px;
+   
+}
+.nav-middle .mic-icon{
+    border-radius: 50%;
+    background: #191918;
+    border: none;
+    padding: 7px;
+}
+.nav-middle .mic-icon img{
+    width: 25px;
+    align-items: center;
+}
+.nav-middle .search-box{
+    box-shadow: 0 0 .7px rgb(236, 232, 232);
+    padding: 11px 12px;
+    background: #131312;
+}
+.nav-middle .search-box input{
+    width: 500px;
+    border: 0px;
+    outline: 0px;
+    background: #131312;
+    font-size: 17px;
+    color: rgb(236, 232, 232);
+}
+.nav-middle .search-btn{
+    border: none;
+    margin-right: 15px;
+    background: #303130;
+    padding: 6.3px 18px;
+    cursor:pointer;
+}
+.nav-middle .search-btn img{
+    width: 25px;
+    opacity: 75%;
+}
+/*------------sidebar-----------*/
+.sidebar{
+    padding-top: 20px;
+    padding-left: 25px;
+    color: white;
+    background: #202120;
+    width: 17%;
+    height: 90.5vh;
+    overflow: scroll;
+    position: fixed;
+    overflow-x: hidden;
+    float:left;
+}
+
+.sidebar .shortcut-link a img{
+    width: 25px;
+    margin-right: 20px;
+    opacity: 90%;
+
+}
+.sidebar .shortcut-link a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 15px;
+    
+}
+.sidebar .shortcut-link hr{
+    border: .1px solid white;
+    margin-bottom: 15px;
+    margin-left: -12px;
+    width: 208px;
+    opacity: 20%;
+    height: .2px;
+}
+.sidebar h3{
+    display: block;
+    font-size: 13px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    opacity: 70%;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.sidebar a img{
+    width: 25px;
+    border-radius: 50%;
+}
+.shortcut-link .about{
+    font-size: 13px;
+    margin-left: -10px;
+    line-height: 19px;
+    opacity: 70%;
+}
+.shortcut-link .copyright{
+    font-size: 13px;
+    margin-left: -10px;
+    line-height: 19px;
+    opacity: 40%;
+    margin-bottom: 20px;
+}
+/* ------------- categories -------*/
+.categories{
+    background: #202120;
+    padding-left: 18%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+}
+.categories button{
+    background: #363736;
+    color: white;
+    border-radius: 30px;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+}
+.categories .btn{
+    margin-left: -10px;
+    background: white;
+    color: black;
+}
+.categories .alt-btn{
+    margin-left: -4px;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    opacity: 70%;
+}
+.categories .alt-btn2{
+    margin-left: -10px;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    opacity: 70%;
+}
+
+/*------------main-----------*/
+.container{
+    background: #191918;
+    padding-left: 18.7%;
+    padding-top: 19px;
+    padding-bottom: 10px;
+    padding-right: 2%;
+    margin-top: 36px;
+}
+.listcontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+
+}
+.vid-list .thumbnail{
+    width: 100%;
+
+}
+.vid-list .flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+.vid-list .flex-div img{
+    border-radius: 50%;
+    width: 15%;
+    margin-right: 10px;
+}
+.vid-info{
+    color: #AAAA;
+    font-size: 13px;
+    font-weight: 500;
+}
+.vid-info a{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    display: block;
+}
+.vid-info p{
+    margin-bottom: 5px;
+}
